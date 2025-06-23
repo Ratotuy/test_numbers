@@ -8,7 +8,7 @@ class LocalStorageService {
     final prefs = await SharedPreferences.getInstance();
     final currentList = prefs.getStringList(_key) ?? [];
 
-    // Избегаем дубликатов
+
     if (!currentList.contains(info)) {
       currentList.add(info);
       await prefs.setStringList(_key, currentList);
