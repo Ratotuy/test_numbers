@@ -8,6 +8,8 @@ void main() {
 }
 
 class NumberInfoApp extends StatelessWidget {
+  const NumberInfoApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
